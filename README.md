@@ -12,8 +12,8 @@ with one line per trigger, EvtNb being the trigger ID on that specific unit, and
 ### [positions_GP35.txt](https://github.com/TREND50/gp_recons/blob/master/positions_GP35.txt)
 Format: UnitID; x; y; z 
 
-x is measured from Eastwards, y Northwards. z is altitude asl. 
-Note that ALL units have to be given in file, in incremental order! The code will search for this file in the ```$P35_TXT_PATH``` directory, or if this variable is not defined in your system, in the ```gp_recons``` directory.
+x is measured Eastwards, y Northwards. z is altitude asl (to be modified, see ToDo). 
+Note that ALL units have to be written in the file and in incremental order! 
 
 The code will search for these two files in the ```$GP35_TXT_PATH``` directory, or if this variable is not defined in the system, in the ```gp_recons``` directory.
 
@@ -28,7 +28,7 @@ One line per reconstructed coincidence. x is the West-East coordinate of the rec
 ### RRunId_planerecons.txt
 Format: CoincId; UnixSec; Mult; Theta; Theta_err; Phi; Phi_err; Chi2; Significance
 
-One line per reconstructed coincidence. Angles are given in degrees. Theta = 0° is zenith, 90° is horizon. Phi conventions still to be checked :-).  At this stage, errors, Chi2 and significance are not reliable. The code will write this file in the ```$GP35_TXT_PATH``` directory, or if this variable is not defined in your system, in the ```gp_recons``` directory.
+One line per reconstructed coincidence. Angles are given in degrees. Theta = 0° is zenith, 90° is horizon. Phi conventions still to be checked :-).  At this stage, errors, Chi2 and significance are not reliable. 
 
 These two output files are writen in the ```$GP35_TXT_PATH``` directory, or if this variable is not defined in the system, in the ```gp_recons``` directory. The script [readRecons.py](https://github.com/TREND50/gp_ana/blob/master/readRecons.py) provides a fast way to plot results from these two output files.
 
