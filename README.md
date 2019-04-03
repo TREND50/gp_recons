@@ -28,7 +28,7 @@ One line per reconstructed coincidence. x is the West-East coordinate of the rec
 ### RRunId_planerecons.txt
 Format: CoincId; UnixSec; Mult; Theta; Theta_err; Phi; Phi_err; Chi2; Significance
 
-One line per reconstructed coincidence. Angles are given in degrees. Theta = 0° is zenith, 90° is horizon. Phi conventions still to be checked :-).  At this stage, errors, Chi2 and significance are not reliable. However [readRecons.py](https://github.com/TREND50/gp_ana/blob/master/readRecons.py) provides a way to compute a Chi2 of the fit in the plot_delays() function, which is actually an implementation of the method described in [TREND's 2011 paper](https://arxiv.org/abs/1007.4359) (see Fig. 6 in particular).
+One line per reconstructed coincidence. Angles are given in degrees. Theta = 0° is zenith, 90° is horizon. Phi conventions still to be checked :-).  At this stage, errors, Chi2 and significance are not reliable. However [readRecons.py](https://github.com/TREND50/gp_ana/blob/master/readRecons.py) provides a way to compute a Chi2 of the fit with the plot_delays() function, which is actually an implementation of the method described in [TREND 2011 paper](https://arxiv.org/abs/1007.4359) (see Fig. 6 in particular).
 
 These two output files are writen in the ```$GP35_TXT_PATH``` directory, or if this variable is not defined in the system, in the ```gp_recons``` directory. The script [readRecons.py](https://github.com/TREND50/gp_ana/blob/master/readRecons.py) provides a fast way to plot results from these two output files.
 
