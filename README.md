@@ -5,9 +5,9 @@ This program, written in C, is an adaptation of the code developped by V. Niess 
 
 ## Input files: 
 ### RRunId_coinctable.txt
-Format = UnixSec; UnitId; EvtNb; CoincNb; TiggerTime; 
+Format = UnixSec; UnitId; EvtNb; CoincNb; TriggerTime; 
 
-with one line per trigger, EvtNb being the trigger ID on that specific unit, and TriggerTime being given in ns wrt first unit triggered in the coincidence. This file is produced through the build_coins() method of [readData.py](https://github.com/TREND50/gp_ana/blob/master/readData.py). 
+with one line per trigger, EvtNb being the trigger ID on that specific unit, and TriggerTime being given in ns wrt first unit triggered in the coincidence. This file is produced through the build_coins() function of [readData.py](https://github.com/TREND50/gp_ana/blob/master/readData.py). 
 
 ### [positions_GP35.txt](https://github.com/TREND50/gp_recons/blob/master/positions_GP35.txt)
 Format: UnitID; x; y; z 
