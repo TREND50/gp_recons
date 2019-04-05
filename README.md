@@ -37,6 +37,6 @@ Simply launch ```./recons RunId``` in the ```gp_recons``` directory.
 
 ## ToDo:
 1. <s> Install gp_recons in Ulastai for a fast analysis on site. Make sure gp_recons compiles on all plateforms (not true on my local machine).</s> **Done by Gu Junhua, March 20.**
-2. Add function in [readData.py](https://github.com/TREND50/gp_ana/blob/master/readData.py) calling gp_recons directly inside this script, hence making this reconstruction step transparent to the user.
+2. Add function in [readData.py](https://github.com/TREND50/gp_ana/blob/master/readData.py) calling recons executable directly inside this script, hence making this reconstruction step transparent to the user.
 3. Presently gp_recons follows the TREND referntial convention (x <=> Easting; y = Northing; z<=>Up, azimuth counted positivily West from North. We have to modify the code to match GRAND referential conventions (ie: x <=> Northing; y <=> Westing, z <=> up; azimuth counted postively West from North; see details [here](https://github.com/grand-mother/simulations/blob/master/GRANDAngularConventions.pdf)). However this should be done in coordination with V. Decoene (contact on Slack: @Valentin) who also used the TREND recons code as a base for his work on GRAND angular reconstruction and thus went to a similar process already. A temporary, fast solution is to wrap the gp_recons code in a Python layer doing the conversion between GRAND and TREND conventions.
 
