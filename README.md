@@ -12,8 +12,8 @@ with one line per trigger, EvtNb being the trigger ID on that specific unit, and
 ### [positions_GP35.txt](https://github.com/TREND50/gp_recons/blob/master/positions_GP35.txt)
 Format: UnitID; x; y; z 
 
-x is measured Eastwards, y Northwards. z is altitude asl (to be modified, see ToDo). 
-Note that ALL units have to be written in the file and in incremental order! 
+x is measured Eastwards, y Northwards, z is altitude asl (to be modified, see ToDo). 
+Note that ALL detection units have to be listed in this file and in incremental order! 
 
 The code will search for these two files in the ```$GP35_TXT_PATH``` directory, or if this variable is not defined in the system, in the ```gp_recons``` directory.
 
