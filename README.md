@@ -5,7 +5,7 @@ This program, written in C, is an adaptation of the code developped by V. Niess 
 
 ## Input files: 
 ### RRunId_coinctable.txt
-Format = UnixSec; UnitId; EvtNb; CoincNb; TriggerTime; 
+Format = UnixSec; UnitId; EvtNb; CoincNb; TriggerTime
 
 with one line per trigger, EvtNb being the trigger ID on that specific unit, and TriggerTime being given in ns wrt first unit triggered in the coincidence. This file is produced through the build_coins() function of [readData.py](https://github.com/TREND50/gp_ana/blob/master/readData.py). 
 
@@ -23,7 +23,7 @@ The code will search for these two files in the ```$GP35_TXT_PATH``` directory, 
 #### RRunId_sphrecons.txt
 Format: CoincId; UnixSec; Mult; x; y; z; t0; Chi2; Significance
 
-One line per reconstructed coincidence. x is the Easting coordinate of the reconstructed point source, y its Northing coordinate and z its altitude (TREND conventions), ts the time of emission (wrt the first antenna trigger hence ts<0). At this stage, Chi2 and significance are not reliable. 
+One line per reconstructed coincidence. x is the Easting coordinate of the reconstructed point source, y its Northing coordinate and z its altitude (TREND conventions), ts the time of emission (wrt the first antenna trigger hence ts<0). At this stage, Chi2 and significance are not reliable. However [readRecons.py](https://github.com/TREND50/gp_ana/blob/master/readRecons.py) provides a way to compute a Chi2 of the fit with the plot_delays() function, which is actually an implementation of the method described in [TREND 2011 paper](https://arxiv.org/abs/1007.4359) (see Fig. 6 in particular).
 
 ### RRunId_planerecons.txt
 Format: CoincId; UnixSec; Mult; Theta; Theta_err; Phi; Phi_err; Chi2; Significance
