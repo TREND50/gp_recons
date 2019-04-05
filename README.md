@@ -1,6 +1,6 @@
 # gp_recons
 
-This software reconstructs the wave associated to coincidences observed between antenna triggers, where a coincidence between two antennas is defined as a time interval between triggers shorter than the time it would take for an elecromagnetic wave to cover the distance between them. Two different wavefront hypothesis are considered: a plane and a spherical (ie point source) one.
+This software reconstructs the wave associated with coincidences observed between antenna triggers, where a coincidence between two antennas is defined as a time interval between triggers shorter than the time it would take for an elecromagnetic wave to cover the distance between them. Two different wavefront hypothesis are considered: a plane and a spherical (ie point source) one.
 This program, written in C, is an adaptation of the code developped by V. Niess for the TREND reconstruction, and is based on the Fortran [PORT subroutine library](http://www.netlib.org/port/) minimization tools.
 
 ## Input files: 
