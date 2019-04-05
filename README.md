@@ -20,7 +20,7 @@ The code will search for these two files in the ```$GP35_TXT_PATH``` directory, 
 
 ## Output files: 
 
-#### RRunId_sphrecons.txt
+### RRunId_sphrecons.txt
 Format: CoincId; UnixSec; Mult; x; y; z; t0; Chi2; Significance
 
 One line per reconstructed coincidence. x is the Easting coordinate of the reconstructed point source, y its Northing coordinate and z its altitude (TREND conventions), ts the time of emission (wrt the first antenna trigger hence ts<0). At this stage, Chi2 and significance are not reliable. However [readRecons.py](https://github.com/TREND50/gp_ana/blob/master/readRecons.py) provides a way to compute a Chi2 of the fit with the plot_delays() function, which is actually an implementation of the method described in [TREND 2011 paper](https://arxiv.org/abs/1007.4359) (see Fig. 6 in particular).
